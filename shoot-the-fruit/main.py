@@ -27,8 +27,7 @@ def place_fruit():
     CURRENT_FRUIT.y = randint(10, HEIGHT - 10)
 
 def on_mouse_down(pos):
-    global SCORE
-    global HIGH_SCORE
+    global SCORE, HIGH_SCORE
     if CURRENT_FRUIT.collidepoint(pos):
         SCORE += 1
         print("Good Shot!")
